@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	int cnt,num,find,find_cnt;
 	find_cnt=0;
-	char value[1000];
+	char value[101];
 	cin >> cnt;
 	if (cnt < 1 or cnt >100){
 		exit(0);
