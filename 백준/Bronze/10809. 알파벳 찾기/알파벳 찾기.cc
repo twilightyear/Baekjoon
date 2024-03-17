@@ -5,22 +5,26 @@
 using namespace std;
 
 int main() {
-    string word;
-    cin >> word;
+	string word;
+	cin >> word;
 
-    vector<int> positions(26, -1);
+	if (word.length()>100){
+		exit(0);
+	}
 
-    for (int i = 0; i < word.length(); ++i) {
-        int index = word[i] - 'a';
-        if (positions[index] == -1) {
-            positions[index] = i;
-        }
-    }
+	vector<int> positions(26, -1);
 
-    for (int i = 0; i < 26; ++i) {
-        cout << positions[i] << " ";
-    }
-    cout << endl;
+	for (int i = 0; i < word.length(); i++){
+		int l = word[i] - 'a';
+		if (positions[l] == -1) {
+			positions[l] = i;
+		}
+	}
 
-    return 0;
+	for (int j : positions){
+		cout << j << ' ';
+	}
+	cout << endl;
+
+	return 0;
 }
