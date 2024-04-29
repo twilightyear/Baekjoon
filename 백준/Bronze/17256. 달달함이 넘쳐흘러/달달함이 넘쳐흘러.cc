@@ -2,11 +2,11 @@
 using namespace std;
 
 int main(){
-	int ax,ay,az,bx,by,bz;
+	int ax,ay,az,cx,cy,cz;
 
 	cin >> ax >> ay >> az;
-	cin >> bx >> by >> bz;
+	cin >> cx >> cy >> cz;
 
-	cout << bx-az << ' ' << by/ay << ' ' << bz-ax << endl;
+	cout << cx-az << ' ' << cy/ay << ' ' << cz-ax << endl;
 	return 0;
 }
