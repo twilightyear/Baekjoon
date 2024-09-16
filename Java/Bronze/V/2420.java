@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();
-		int M = scanner.nextInt();
+		long N = scanner.nextLong();
+		long M = scanner.nextLong();
 		
 		if(N-M<0) {
 			System.out.println(M-N);
