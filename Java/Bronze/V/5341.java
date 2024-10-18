@@ -14,7 +14,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		int a;
 		
-		while(1) {
+		while(true) {
 			a = scanner.nextInt();
 			if(a!=0) {
 				System.out.println(calculate(a));
